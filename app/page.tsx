@@ -120,6 +120,51 @@ export default function Home() {
         }}
         className=" h-80 absolute bottom-0 z-0"
       />
+      <footer className="z-15 flex items-center justify-center p-4 gap-5"><a
+                      href="https://www.linkedin.com/in/siddharth-mantri-webdev/"
+                      target="_blank"
+                      className="decoration-transparent"
+                    >
+                      
+                        <Image
+                          src="/linkedin.png"
+                          width={30}
+                          height={30}
+                          alt="linkedin image"
+                          className="mr-1"
+                        />
+                        
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/siddharth-mantri-webdev/"
+                      target="_blank"
+                      className="decoration-transparent"
+                    >
+                      
+                        <Image
+                          src="/github.png"
+                          width={30}
+                          height={30}
+                          alt="github image"
+                          className=""
+                        />
+                        
+                    </a>
+                    <a
+                      href="https://drive.google.com/file/d/1rOnKp9yArdt86P2h-dQqZ2pbgsev0BU5/view?usp=sharing"
+                      target="_blank"
+                      className="decoration-transparent"
+                    >
+                      
+                        <Image
+                          src="/resume.png"
+                          width={30}
+                          height={30}
+                          alt="resume image"
+                          className=""
+                        />
+                        
+                    </a></footer>
     </div>
   );
 }

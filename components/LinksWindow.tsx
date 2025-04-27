@@ -79,6 +79,25 @@ const LinksWindow = ({ boundRef, isOpen, setIsOpen }: LinksWindowProps) => {
                   GitHub
                 </motion.div>
               </a>
+              <a
+                href="https://drive.google.com/file/d/1rOnKp9yArdt86P2h-dQqZ2pbgsev0BU5/view?usp=sharing"
+                target="_blank"
+                className="decoration-transparent"
+              >
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  className="flex gap-5 text-2xl font-semibold border border-[#e4e4e4] p-2 rounded-lg items-center text-[#515151]"
+                >
+                  <Image
+                    src="/resume.png"
+                    width={30}
+                    height={30}
+                    alt="resume image"
+                    className="contrast-50"
+                  />
+                  Resume
+                </motion.div>
+              </a>
               <div className="p-5 bg-amber-50 rounded-lg">
                 Might add some more links if I ever decide to become an
                 influencer :{")"}
@@ -90,5 +109,5 @@ const LinksWindow = ({ boundRef, isOpen, setIsOpen }: LinksWindowProps) => {
     </>
   );
 };
-
+//https://drive.google.com/file/d/1rOnKp9yArdt86P2h-dQqZ2pbgsev0BU5/view?usp=sharing
 export default LinksWindow;
