@@ -5,7 +5,8 @@ import Image from "next/image";
 //dont judge me for not properly making components for this project I wanted to just get this done quick and make it live, I will do it later :(
 
 interface WorkWindowProps {
-boundRef: React.RefObject<HTMLDivElement | null>;  isOpen: boolean;
+  boundRef: React.RefObject<HTMLDivElement | null>;
+  isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
@@ -28,10 +29,10 @@ const WorkWindow = ({ boundRef, isOpen, setIsOpen }: WorkWindowProps) => {
             zIndex: 10,
           }}
           initial={windowWidth > 768 ? { x: 440, y: 220 } : { y: 500 }}
-          animate={windowWidth > 768 ? {} : { y: 0 }}
+          animate={windowWidth > 768 ? {} : { y: 80 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="z-1 flex flex-col rounded-xl w-screen md:w-[800px] xl:w-[1000px] ">
+          <div className="z-1 flex flex-col rounded-xl w-screen md:w-[700px] xl:w-[1000px] ">
             <div className="bg-[#424242] py-3 px-5 text-white text-[1.4rem] font-mono rounded-t-lg window-header flex justify-between">
               work
               <motion.button
@@ -43,7 +44,7 @@ const WorkWindow = ({ boundRef, isOpen, setIsOpen }: WorkWindowProps) => {
               </motion.button>
             </div>
             <div className="flex flex-col border-2 bg-white border-[#999999] shadow-xl rounded-b-xl">
-              <div className="xl:px-15 px-5 pt-5 pb-10 flex flex-col h-screen md:h-[480px] gap-10 overflow-y-scroll text-xl text-[#4b4b4b] ">
+              <div className="xl:px-15 px-5 pt-5 pb-10 flex flex-col h-[85vh] md:h-[480px] gap-10 overflow-y-scroll text-xl text-[#4b4b4b] ">
                 <div className="p-5 bg-amber-50 rounded-lg">
                   Want to work with me? Reach me out at my{" "}
                   <a href="mailto:sidmantri3@gmail.com">work email!</a>

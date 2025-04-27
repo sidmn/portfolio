@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-a{
-    color: var(--color-orange-400);
-    font-weight: 500;
-    text-decoration: underline;
+a {
+  color: var(--color-orange-400);
+  font-weight: 500;
+  text-decoration-line: underline;
 }

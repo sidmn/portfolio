@@ -43,12 +43,12 @@ export default function Home() {
         </motion.button>
       </div>
       <div className="flex grow-1 items-center justify-center">
-        <div className="z-1 flex flex-col rounded-xl w-[650px] xl:w-[800px] ">
+        <div className="z-1 flex flex-col rounded-xl w-[650px] xl:w-[800px] p-5">
           <div className="bg-[#424242] py-3 pl-5 text-white text-[1.4rem] font-mono rounded-t-lg">
             home
           </div>
-          <div className="flex flex-col items-center justify-center py-20 border-2 bg-white border-[#999999] shadow-xl rounded-b-xl">
-            <div className="text-7xl pt-5 text-[#535353]">
+          <div className="flex flex-col items-center justify-center py-20 border-2 bg-white border-[#999999] shadow-xl rounded-b-xl px-5">
+            <div className="text-5xl sm:text-7xl pt-5 text-[#535353]">
               hi! <span className="font-medium text-orange-400">Sid here</span>{" "}
             </div>
             <div className="text-2xl pt-5 text-[#535353]">

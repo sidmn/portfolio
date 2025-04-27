@@ -26,7 +26,7 @@ const AboutWindow = ({ boundRef, isOpen, setIsOpen }: AboutWindowProps) => {
             zIndex: 10,
           }}
           initial={windowWidth > 768 ? { x: 100, y: 100 } : { y: 500 }}
-          animate={windowWidth > 768 ? {} : { y: 0 }}
+          animate={windowWidth > 768 ? {} : { y: 80 }}
           transition={{ duration: 0.5 }}
         >
           <div className="z-1 flex flex-col rounded-xl w-screen md:w-[650px] xl:w-[800px] ">
@@ -41,16 +41,16 @@ const AboutWindow = ({ boundRef, isOpen, setIsOpen }: AboutWindowProps) => {
               </motion.button>
             </div>
             <div className="flex flex-col border-2 bg-white border-[#999999] shadow-xl rounded-b-xl">
-              <div className="flex gap-10 p-5 md:px-15 pt-10 pb-5 border-b-1 border-[#f4f4f4] sticky">
+              <div className="flex gap-5 sm:gap-10 px-5 md:px-15 pt-10 pb-5 border-b-1 border-[#f4f4f4] sticky">
                 <Image
                   src="/profile.jpg"
                   width={140}
                   height={140}
                   alt="profile picture"
-                  className="rounded-full border-7 border-orange-400 "
+                  className="rounded-full border-7 border-orange-400 w-[120px] sm:w-[140px]"
                 />
                 <div className="flex flex-col justify-center">
-                  <div className="text-2xl md:text-5xl font-medium text-orange-400">
+                  <div className="text-xl sm:text-2xl md:text-5xl font-medium text-orange-400">
                     Siddharth Mantri
                   </div>
                   <div className="md:text-xl text-[#4b4b4b]">
@@ -58,7 +58,7 @@ const AboutWindow = ({ boundRef, isOpen, setIsOpen }: AboutWindowProps) => {
                   </div>
                 </div>
               </div>
-              <div className="px-15 pt-5 pb-10 flex flex-col h-screen md:h-[263px] gap-10 overflow-y-scroll text-xl text-[#4b4b4b] ">
+              <div className="px-8 sm:px-15 pt-5 pb-10 flex flex-col h-[55vh] md:h-[263px] gap-10 overflow-y-scroll text-xl text-[#4b4b4b] ">
                 <div className="">
                   hi! i&apos;m sid, i...
                   <ul className="py-5 pl-5 list-disc">
