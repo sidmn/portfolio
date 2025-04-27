@@ -120,7 +120,7 @@ export default function Home() {
         }}
         className=" h-80 absolute bottom-0 z-0"
       />
-      <footer className="z-15 flex items-center justify-center p-4 gap-5"><a
+      <footer className="z-1 flex items-center justify-center p-4 gap-5"><a
                       href="https://www.linkedin.com/in/siddharth-mantri-webdev/"
                       target="_blank"
                       className="decoration-transparent"
