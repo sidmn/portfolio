@@ -11,6 +11,7 @@ import LinksWindow from "@/components/LinksWindow";
 
 export default function Home() {
   const [play, { stop }] = useSound("/Lofi.mp3");
+  const [click] = useSound("/pop.wav",{volume:0.05})
   const [isPlaying, setIsPlaying] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [workOpen, setWorkOpen] = useState(false);
@@ -57,7 +58,7 @@ export default function Home() {
             <div className="flex flex-row gap-15 pt-15">
               <button
                 className="transition hover:scale-105 ease-in-out duration-300"
-                onClick={()=>setAboutOpen(true)}
+                onClick={()=>{click();setAboutOpen(true)}}
               >
                 <div>
                   <Image
@@ -72,7 +73,7 @@ export default function Home() {
                   </h1>
                 </div>
               </button>
-              <button className="transition hover:scale-105 ease-in-out duration-300" onClick={()=>setWorkOpen(true)}>
+              <button className="transition hover:scale-105 ease-in-out duration-300" onClick={()=>{click();setWorkOpen(true)}}>
                 <div>
                   <Image
                     width={70}
@@ -86,7 +87,7 @@ export default function Home() {
                   </h1>
                 </div>
               </button>
-              <button className="transition hover:scale-105 ease-in-out duration-300" onClick={()=>setLinksOpen(true)}>
+              <button className="transition hover:scale-105 ease-in-out duration-300" onClick={()=>{click();setLinksOpen(true)}}>
                 <div>
                   <Image
                     width={70}
