@@ -48,7 +48,7 @@ export default function Home() {
           )}
         </motion.button>
         <div>
-          <a target="_blank" href="https://portfolio.siddharth-mantri.co.in/">
+          <a href="https://portfolio.siddharth-mantri.co.in/">
             <motion.button
               className="pt-1 pb-2 px-5 rounded-lg  bg-[#424242]  text-white"
               whileHover={{ scale: 1.05 }}
