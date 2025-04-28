@@ -160,7 +160,7 @@ const WorkWindow = ({ boundRef, isOpen, setIsOpen }: WorkWindowProps) => {
                         width={300}
                         height={250}
                         alt="Project Image"
-                        className="rounded-lg h-[200px] xl:w-[300px] xl:h-[250px]"
+                        className="rounded-lg h-[200px] xl:w-[300px] xl:h-[200px]"
                       />
                       <div className="gap-5">
                         <h1 className="text-2xl font-medium text-orange-400 pb-5">
@@ -247,7 +247,7 @@ const WorkWindow = ({ boundRef, isOpen, setIsOpen }: WorkWindowProps) => {
                         width={300}
                         height={300}
                         alt="Project Image"
-                        className="rounded-lg h-[200px] xl:w-[300px] xl:h-[250px]"
+                        className="rounded-lg h-[200px] xl:w-[300px] xl:h-[200px]"
                       />
                       <div className="gap-5">
                         <h1 className="text-2xl font-medium text-orange-400 pb-5">
@@ -343,7 +343,7 @@ const WorkWindow = ({ boundRef, isOpen, setIsOpen }: WorkWindowProps) => {
                         width={300}
                         height={300}
                         alt="Project Image"
-                        className="rounded-lg h-[200px] xl:w-[300px] xl:h-[250px]"
+                        className="rounded-lg h-[200px] xl:w-[300px] xl:h-[200px]"
                       />
                       <div className="gap-5">
                         <h1 className="text-2xl font-medium text-orange-400 pb-5">

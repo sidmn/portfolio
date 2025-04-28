@@ -58,7 +58,7 @@ const AboutWindow = ({ boundRef, isOpen, setIsOpen }: AboutWindowProps) => {
                   </div>
                 </div>
               </div>
-              <div className="px-8 sm:px-15 pt-5 pb-10 flex flex-col h-[55vh] md:h-[263px] gap-10 overflow-y-scroll text-xl text-[#4b4b4b] ">
+              <div className="px-8 sm:px-15 pt-5 pb-10 flex flex-col h-[55vh] md:h-[300px] gap-10 overflow-y-scroll text-xl text-[#4b4b4b] ">
                 <div className="">
                   hi! i&apos;m sid, i...
                   <ul className="py-5 pl-5 list-disc">
